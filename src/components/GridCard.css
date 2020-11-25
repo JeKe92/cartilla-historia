@@ -1,0 +1,23 @@
+.grid-card {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .grid-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
